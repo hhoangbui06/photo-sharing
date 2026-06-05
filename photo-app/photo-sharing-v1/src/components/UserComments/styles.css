@@ -1,0 +1,30 @@
+.user-comments h1 {
+  margin-top: 0;
+}
+
+.comment-preview {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 12px;
+  align-items: center;
+  padding: 10px 0;
+  color: #24292f;
+  border-bottom: 1px solid #e5e7eb;
+  text-decoration: none;
+}
+
+.comment-preview:hover {
+  text-decoration: underline;
+}
+
+.comment-preview img {
+  width: 96px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.comment-preview p {
+  margin: 0;
+  line-height: 1.4;
+}

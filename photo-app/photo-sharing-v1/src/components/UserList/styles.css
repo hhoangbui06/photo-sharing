@@ -1,0 +1,54 @@
+.user-list h2 {
+  margin-top: 0;
+}
+
+.user-list ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.user-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.user-list a {
+  color: #0969da;
+  text-decoration: none;
+}
+
+.user-list a:hover {
+  text-decoration: underline;
+}
+
+.user-name-link {
+  flex: 1;
+  padding: 10px 4px;
+}
+
+.user-counts {
+  display: flex;
+  gap: 6px;
+}
+
+.count-bubble {
+  min-width: 22px;
+  padding: 2px 7px;
+  border-radius: 999px;
+  color: #ffffff !important;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.photo-count {
+  background: #238636;
+}
+
+.comment-count {
+  background: #cf222e;
+}

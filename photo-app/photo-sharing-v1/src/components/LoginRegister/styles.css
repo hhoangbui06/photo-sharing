@@ -1,0 +1,136 @@
+.login-register {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.single-auth {
+  grid-template-columns: minmax(260px, 520px);
+  justify-content: center;
+}
+
+.auth-section {
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #d8dee4;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.auth-section h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #24292f;
+}
+
+.auth-section form {
+  display: grid;
+  gap: 14px;
+}
+
+.auth-section label {
+  display: grid;
+  gap: 6px;
+  font-weight: 600;
+  color: #24292f;
+  font-size: 14px;
+}
+
+.auth-section input,
+.auth-section textarea {
+  padding: 10px 12px;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  font: inherit;
+  font-size: 14px;
+  transition: border-color 0.2s;
+}
+
+.auth-section input:focus,
+.auth-section textarea:focus {
+  outline: none;
+  border-color: #20c997;
+  box-shadow: 0 0 0 3px rgba(32, 201, 151, 0.1);
+}
+
+.auth-section textarea {
+  min-height: 76px;
+  resize: vertical;
+}
+
+.auth-section button {
+  width: 100%;
+  padding: 10px 16px;
+  margin-top: 8px;
+  background: #20c997;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.auth-section button:hover {
+  background: #1aa179;
+}
+
+.auth-section button:active {
+  background: #118270;
+}
+
+.error-text {
+  padding: 10px 12px;
+  margin-top: 8px;
+  background: #ffebe6;
+  border: 1px solid #ffccba;
+  border-radius: 6px;
+  color: #cf222e;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.hint-text {
+  color: #57606a;
+  font-size: 14px;
+  margin: 12px 0 0 0;
+}
+
+.success-text {
+  padding: 10px 12px;
+  margin-top: 8px;
+  background: #dffcf0;
+  border: 1px solid #b3f0d0;
+  border-radius: 6px;
+  color: #1a7f37;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.auth-section p {
+  margin: 12px 0 0 0;
+  font-size: 14px;
+  color: #24292f;
+}
+
+.auth-section a {
+  color: #20c997;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.auth-section a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 760px) {
+  .login-register {
+    grid-template-columns: 1fr;
+  }
+
+  .auth-section h1 {
+    font-size: 24px;
+  }
+}

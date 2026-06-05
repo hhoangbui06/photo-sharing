@@ -1,0 +1,159 @@
+.photos-view {
+  display: grid;
+  gap: 20px;
+}
+
+.photo-card {
+  border: 1px solid #d8dee4;
+  border-radius: 8px;
+  padding: 16px;
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s;
+}
+
+.photo-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.photo-card img {
+  display: block;
+  width: 100%;
+  max-width: 760px;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.photo-time,
+.comment-meta {
+  color: #57606a;
+  font-size: 13px;
+  margin: 8px 0;
+}
+
+.photo-time {
+  font-weight: 500;
+}
+
+.comment-list {
+  margin: 16px 0;
+}
+
+.comment-list h3 {
+  margin: 12px 0 12px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #24292f;
+}
+
+.comment {
+  margin-top: 12px;
+  padding: 10px;
+  background: #f6f8fa;
+  border-left: 3px solid #de1818;
+  border-radius: 4px;
+}
+
+.comment p {
+  margin: 4px 0;
+}
+
+.comment-meta {
+  font-weight: 500;
+}
+
+.comment-meta a {
+  color: #070ee6;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.comment-meta a:hover {
+  text-decoration: underline;
+}
+
+.add-comment-form {
+  display: grid;
+  gap: 10px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.add-comment-form label {
+  display: grid;
+  gap: 6px;
+  font-weight: 600;
+  color: #24292f;
+  font-size: 14px;
+}
+
+.add-comment-form textarea {
+  min-height: 72px;
+  padding: 10px 12px;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  font: inherit;
+  font-size: 14px;
+  transition: border-color 0.2s;
+  resize: vertical;
+}
+
+.add-comment-form textarea:focus {
+  outline: none;
+  border-color: #215bd8;
+  box-shadow: 0 0 0 3px rgba(32, 201, 151, 0.1);
+}
+
+.add-comment-form button {
+  width: fit-content;
+  padding: 8px 16px;
+  background: #3312dc;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.add-comment-form button:hover {
+  background: #2320c9;
+}
+
+.add-comment-form button:active {
+  background: #251cce;
+}
+
+.stepper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 0;
+}
+
+.stepper button {
+  padding: 8px 12px;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #24292f;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.stepper button:hover:not(:disabled) {
+  background: #f6f8fa;
+  border-color: #1e36d7;
+  color: #1d38d3;
+}
+
+.stepper button:disabled {
+  color: #8c959f;
+  border-color: #d0d7de;
+  cursor: not-allowed;
+  background: #f6f8fa;
+}

@@ -1,0 +1,73 @@
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 56px;
+  padding: 0 20px;
+  color: #ffffff;
+  background: #0e32cf;
+}
+
+.topbar-name {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-align: right;
+}
+
+.topbar-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.topbar button {
+  padding: 6px 10px;
+  border: 1px solid #8c959f;
+  border-radius: 4px;
+  color: #24292f;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.advanced-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.hidden-file-input {
+  display: none;
+}
+
+.upload-message {
+  color: #d8dee4;
+  font-size: 13px;
+}
+
+@media (max-width: 760px) {
+  .topbar {
+    position: static;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 16px;
+  }
+
+  .topbar-right {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+  }
+}
