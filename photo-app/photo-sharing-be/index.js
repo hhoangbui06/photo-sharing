@@ -15,9 +15,15 @@ const PORT = process.env.PORT || 8081;
 
 dbConnect();
 
+const allowedOrigins = [
+  "http://localhost:3000",
+  process.env.FRONTEND_URL,
+  process.env.FRONTEND_URL_PROD,
+].filter(Boolean);
+
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: allowedOrigins,
     credentials: true,
   }),
 );
